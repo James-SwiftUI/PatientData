@@ -1,17 +1,17 @@
-//
-//  PatientDataApp.swift
-//  PatientData
-//
-//  Created by James on 04/01/2024.
-//
-
 import SwiftUI
-
+import SwiftData
 @main
 struct PatientDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
+        .modelContainer(for: Patient.self)
     }
+    
+    init(){
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
+    }
+
 }
+

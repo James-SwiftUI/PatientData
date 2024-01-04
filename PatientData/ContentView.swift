@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PatientData
-//
-//  Created by James on 04/01/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {

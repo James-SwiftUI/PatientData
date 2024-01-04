@@ -11,6 +11,13 @@
 		1AF3E3AB2B46FC0900139AFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3AA2B46FC0900139AFD /* ContentView.swift */; };
 		1AF3E3AD2B46FC0A00139AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3E3AC2B46FC0A00139AFD /* Assets.xcassets */; };
 		1AF3E3B02B46FC0A00139AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3E3AF2B46FC0A00139AFD /* Preview Assets.xcassets */; };
+		1AF3E3B82B46FC2900139AFD /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3B72B46FC2900139AFD /* Patient.swift */; };
+		1AF3E3BA2B46FC6800139AFD /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3B92B46FC6800139AFD /* Medication.swift */; };
+		1AF3E3BC2B46FC8C00139AFD /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3BB2B46FC8C00139AFD /* Department.swift */; };
+		1AF3E3BF2B46FCAA00139AFD /* SortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3BE2B46FCAA00139AFD /* SortOrder.swift */; };
+		1AF3E3C12B46FE8300139AFD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3C02B46FE8200139AFD /* MainTabView.swift */; };
+		1AF3E3C32B46FE9900139AFD /* PatientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3C22B46FE9900139AFD /* PatientListView.swift */; };
+		1AF3E3C52B4700AF00139AFD /* PatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3C42B4700AF00139AFD /* PatientList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		1AF3E3AA2B46FC0900139AFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AF3E3AC2B46FC0A00139AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AF3E3AF2B46FC0A00139AFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AF3E3B72B46FC2900139AFD /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		1AF3E3B92B46FC6800139AFD /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		1AF3E3BB2B46FC8C00139AFD /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		1AF3E3BE2B46FCAA00139AFD /* SortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrder.swift; sourceTree = "<group>"; };
+		1AF3E3C02B46FE8200139AFD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		1AF3E3C22B46FE9900139AFD /* PatientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListView.swift; sourceTree = "<group>"; };
+		1AF3E3C42B4700AF00139AFD /* PatientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,10 @@
 			children = (
 				1AF3E3A82B46FC0900139AFD /* PatientDataApp.swift */,
 				1AF3E3AA2B46FC0900139AFD /* ContentView.swift */,
+				1AF3E3C02B46FE8200139AFD /* MainTabView.swift */,
+				1AF3E3C22B46FE9900139AFD /* PatientListView.swift */,
+				1AF3E3C42B4700AF00139AFD /* PatientList.swift */,
+				1AF3E3B62B46FC1E00139AFD /* Model */,
 				1AF3E3AC2B46FC0A00139AFD /* Assets.xcassets */,
 				1AF3E3AE2B46FC0A00139AFD /* Preview Content */,
 			);
@@ -65,6 +83,25 @@
 				1AF3E3AF2B46FC0A00139AFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AF3E3B62B46FC1E00139AFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3E3BD2B46FC9F00139AFD /* Enum */,
+				1AF3E3B72B46FC2900139AFD /* Patient.swift */,
+				1AF3E3B92B46FC6800139AFD /* Medication.swift */,
+				1AF3E3BB2B46FC8C00139AFD /* Department.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AF3E3BD2B46FC9F00139AFD /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3E3BE2B46FCAA00139AFD /* SortOrder.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF3E3BA2B46FC6800139AFD /* Medication.swift in Sources */,
 				1AF3E3AB2B46FC0900139AFD /* ContentView.swift in Sources */,
+				1AF3E3C52B4700AF00139AFD /* PatientList.swift in Sources */,
+				1AF3E3BC2B46FC8C00139AFD /* Department.swift in Sources */,
 				1AF3E3A92B46FC0900139AFD /* PatientDataApp.swift in Sources */,
+				1AF3E3C32B46FE9900139AFD /* PatientListView.swift in Sources */,
+				1AF3E3C12B46FE8300139AFD /* MainTabView.swift in Sources */,
+				1AF3E3BF2B46FCAA00139AFD /* SortOrder.swift in Sources */,
+				1AF3E3B82B46FC2900139AFD /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +321,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +349,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
