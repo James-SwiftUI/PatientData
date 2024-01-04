@@ -1,0 +1,40 @@
+[
+    
+        {
+            "name" : "Audiology",
+            "icon" : "ear.badge.waveform"
+        },
+        {
+            "name" : "Cardiology",
+            "icon" : "heart"
+        },
+        {
+            "name" : "Emergency",
+            "icon" : "staroflife"
+        },
+        {
+            "name" : "ICU",
+            "icon" : "waveform.path.ecg.rectangle"
+        },
+        {
+            "name" : "Neurology",
+            "icon" : "brain"
+        },
+        {
+            "name" : "Oncology",
+            "icon" : "ivfluid.bag"
+        },
+        {
+            "name" : "Ophthalmology",
+            "icon" : "eye"
+        },
+        {
+            "name" : "Respiratory",
+            "icon" : "lungs"
+        },
+        {
+            "name" : "Surgery",
+            "icon" : "scissors"
+        }
+
+]
