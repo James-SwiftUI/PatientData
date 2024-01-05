@@ -41,7 +41,7 @@ struct PatientListView: View {
                         Button{
                             showAddDepartment = true
                         }label: {
-                            Image(systemName: "plus.circle")
+                            Image(systemName: "plus.square.fill")
                                 .imageScale(.large)
                         }
                        
@@ -52,8 +52,7 @@ struct PatientListView: View {
                     AddPatientView()
                 }
                 .sheet(isPresented: $showAddDepartment){
-                    Text("Show Departments")
-                    //DepartmentListView()
+                    AddDepartmentView()
                 }
         }
         
