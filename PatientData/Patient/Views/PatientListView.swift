@@ -39,6 +39,7 @@ struct PatientListView: View {
                         }
                         
                         Button{
+                            //screen to be used to test will preload the JSON
                             showAddDepartment = true
                         }label: {
                             Image(systemName: "plus.square.fill")
