@@ -1,0 +1,41 @@
+[
+        
+        {
+            "name" : "Antiarrhythmics",
+            "dosage" : "250mg"
+        },
+        {
+            "name" : "Antibiotics",
+            "dosage" : "150mg"
+        },
+        {
+            "name" : "Anticonvulsants",
+            "dosage" : "1000mg"
+        },
+        {
+            "name" : "Antidepressants",
+            "dosage" : "200mg"
+        },
+        {
+            "name" : "Antiemetics",
+            "dosage" : "300mg"
+        },
+        {
+            "name" : "Candesartan",
+            "dosage" : "100mg"
+        },
+        {
+            "name" : "Antihyperglycemics",
+            "dosage" : "200mg"
+        },
+        {
+            "name" : "Bronchodilators",
+            "dosage" : "1000mg"
+        },
+        {
+            "name" : "Painkillers",
+            "dosage" : "500mg"
+        }
+        
+    
+]

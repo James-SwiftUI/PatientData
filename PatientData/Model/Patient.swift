@@ -38,6 +38,18 @@ final class Patient{
         }
     }
     
+    var description: String{
+        switch Status(rawValue: status)!{
+            
+        case .Inpatient:
+            "Inpatient"
+        case .Outpatient:
+            "Outpatient"
+        case .Emergency:
+            "Emergency"
+        }
+    }
+    
     var age:(years: Int, months: Int, days: Int){
         let calendar = Calendar.current
         
