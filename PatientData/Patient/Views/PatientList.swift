@@ -35,6 +35,16 @@ struct PatientList: View {
                                     
                                     Text(patient.firstName)
                                     Text(patient.lastName)
+                                    Spacer()
+                                    
+                                
+                                    patient.icon
+                                    Text(patient.description)
+                                        .font(.caption)
+                                        
+                                        
+                                    
+                                    
                                     
                                 }
                                 if let department = patient.department{

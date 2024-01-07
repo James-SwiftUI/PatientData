@@ -1,14 +1,20 @@
 import SwiftUI
-
+import SwiftData
 struct ContentView: View {
+    
+    @Query(sort: \Medication.name) var medications: [Medication]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Placeholder")
+        NavigationStack{
+            List{
+                ForEach(medications){ medication in
+                    VStack(alignment: .leading){
+                        Text(medication.name)
+                        Text(medication.dosage)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 

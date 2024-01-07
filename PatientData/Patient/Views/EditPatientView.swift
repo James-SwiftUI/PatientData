@@ -85,8 +85,7 @@ struct EditPatientView: View {
                         showMedicationView.toggle()
                     }
                     .fullScreenCover(isPresented: $showMedicationView){
-                        Text("Hello")
-                        //MedicationView(patient: patient)
+                        MedicationSelectionView(patient: patient)
                     }
                 }header: {
                     Text("Patient Medications")
@@ -105,6 +104,7 @@ struct EditPatientView: View {
                         }label: {
                             Text("Save Changes")
                         }
+                        .buttonStyle(.borderedProminent)
                     }footer: {
                         Text("Update")
                     }
