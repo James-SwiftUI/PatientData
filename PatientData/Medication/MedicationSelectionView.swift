@@ -32,17 +32,22 @@ struct MedicationSelectionView: View {
                                         Button{
                                             addRemove(medication)
                                         }label: {
-                                            Image(systemName: "circle")
+                                            Text(medication.name)
                                         }
                                     }else{
                                         Button{
                                             addRemove(medication)
                                         }label: {
-                                            Image(systemName: patientMedications.contains(medication) ?  "circle.fill" : "circle")
+                                            Text(medication.name)
+                                                .padding(5)
+                                                .padding(.horizontal, 8)
+                                                .background(
+                                                    patientMedications.contains(medication) ?
+                                                        Color.blue.opacity(0.2) : Color.clear
+                                                ).clipShape(RoundedRectangle(cornerRadius: 12))
                                         }
                                     }
                                 }
-                                Text(medication.name)
                             }
                                                        
                         }
@@ -52,6 +57,8 @@ struct MedicationSelectionView: View {
                     
                 }
             }
+            .navigationTitle("Patient Medications")
+            .navigationBarTitleDisplayMode(.inline)
             .fullScreenCover(isPresented: $showAddMedicationView){
                 AddMedicationView()
             }

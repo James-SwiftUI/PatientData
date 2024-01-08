@@ -11,6 +11,9 @@
 		1A663D9B2B487DB200BB9B79 /* DefaultJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */; };
 		1ABB8CAF2B4B01CD002C7D69 /* MedicationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */; };
 		1ABB8CB12B4B04AC002C7D69 /* AddMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8CB02B4B04AB002C7D69 /* AddMedicationView.swift */; };
+		1AE5DA9E2B4C4AD6002AB2DA /* PatientsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5DA9D2B4C4AD6002AB2DA /* PatientsContainer.swift */; };
+		1AE5DAA02B4C4DCA002AB2DA /* DepartmentsJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5DA9F2B4C4DCA002AB2DA /* DepartmentsJSONDecoder.swift */; };
+		1AE5DAA22B4C5CDC002AB2DA /* MedicationsJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5DAA12B4C5CDC002AB2DA /* MedicationsJSONDecoder.swift */; };
 		1AF3E3A92B46FC0900139AFD /* PatientDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3A82B46FC0900139AFD /* PatientDataApp.swift */; };
 		1AF3E3AB2B46FC0900139AFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3E3AA2B46FC0900139AFD /* ContentView.swift */; };
 		1AF3E3AD2B46FC0A00139AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3E3AC2B46FC0A00139AFD /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 		1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultJSON.swift; sourceTree = "<group>"; };
 		1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationSelectionView.swift; sourceTree = "<group>"; };
 		1ABB8CB02B4B04AB002C7D69 /* AddMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationView.swift; sourceTree = "<group>"; };
+		1AE5DA9D2B4C4AD6002AB2DA /* PatientsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsContainer.swift; sourceTree = "<group>"; };
+		1AE5DA9F2B4C4DCA002AB2DA /* DepartmentsJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsJSONDecoder.swift; sourceTree = "<group>"; };
+		1AE5DAA12B4C5CDC002AB2DA /* MedicationsJSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsJSONDecoder.swift; sourceTree = "<group>"; };
 		1AF3E3A52B46FC0900139AFD /* PatientData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF3E3A82B46FC0900139AFD /* PatientDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDataApp.swift; sourceTree = "<group>"; };
 		1AF3E3AA2B46FC0900139AFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */,
+				1AE5DA9D2B4C4AD6002AB2DA /* PatientsContainer.swift */,
+				1AE5DA9F2B4C4DCA002AB2DA /* DepartmentsJSONDecoder.swift */,
+				1AE5DAA12B4C5CDC002AB2DA /* MedicationsJSONDecoder.swift */,
 			);
 			path = Decoder;
 			sourceTree = "<group>";
@@ -279,9 +288,11 @@
 				1AF3E3BA2B46FC6800139AFD /* Medication.swift in Sources */,
 				1AF3E3AB2B46FC0900139AFD /* ContentView.swift in Sources */,
 				1ABB8CB12B4B04AC002C7D69 /* AddMedicationView.swift in Sources */,
+				1AE5DAA02B4C4DCA002AB2DA /* DepartmentsJSONDecoder.swift in Sources */,
 				1AF3E3C52B4700AF00139AFD /* PatientList.swift in Sources */,
 				1AF3E3BC2B46FC8C00139AFD /* Department.swift in Sources */,
 				1AF3E3CC2B470F6A00139AFD /* EditPatientView.swift in Sources */,
+				1AE5DAA22B4C5CDC002AB2DA /* MedicationsJSONDecoder.swift in Sources */,
 				1A663D972B487D2000BB9B79 /* AddDepartmentView.swift in Sources */,
 				1AF3E3A92B46FC0900139AFD /* PatientDataApp.swift in Sources */,
 				1AF3E3C32B46FE9900139AFD /* PatientListView.swift in Sources */,
@@ -289,6 +300,7 @@
 				1AF3E3C12B46FE8300139AFD /* MainTabView.swift in Sources */,
 				1ABB8CAF2B4B01CD002C7D69 /* MedicationSelectionView.swift in Sources */,
 				1AF3E3BF2B46FCAA00139AFD /* SortOrder.swift in Sources */,
+				1AE5DA9E2B4C4AD6002AB2DA /* PatientsContainer.swift in Sources */,
 				1AF3E3CE2B470F9F00139AFD /* PatientMedications.swift in Sources */,
 				1AF3E3B82B46FC2900139AFD /* Patient.swift in Sources */,
 			);

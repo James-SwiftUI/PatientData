@@ -34,20 +34,21 @@ struct AddMedicationView: View {
                 }
                 .buttonStyle(.borderedProminent)
             }
-        }
-        .navigationTitle("Create medication")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar{
-            ToolbarItem{
-                Button{
-                    dismiss()
-                }label: {
-                    Image(systemName: "x.circle.fill")
-                        .imageScale(.large)
+            .navigationTitle("Create medication")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem{
+                    Button{
+                        dismiss()
+                    }label: {
+                        Image(systemName: "x.circle.fill")
+                            .imageScale(.large)
+                    }
+                    
                 }
-                
             }
         }
+        
     }
 }
 
