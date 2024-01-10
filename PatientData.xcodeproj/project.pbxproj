@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A51A56B2B4F19FF00FCB63F /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51A56A2B4F19FF00FCB63F /* SelectorView.swift */; };
 		1A663D972B487D2000BB9B79 /* AddDepartmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A663D962B487D2000BB9B79 /* AddDepartmentView.swift */; };
 		1A663D9B2B487DB200BB9B79 /* DefaultJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */; };
 		1ABB8CAF2B4B01CD002C7D69 /* MedicationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A51A56A2B4F19FF00FCB63F /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
 		1A663D962B487D2000BB9B79 /* AddDepartmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepartmentView.swift; sourceTree = "<group>"; };
 		1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultJSON.swift; sourceTree = "<group>"; };
 		1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationSelectionView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */,
 				1ABB8CB02B4B04AB002C7D69 /* AddMedicationView.swift */,
+				1A51A56A2B4F19FF00FCB63F /* SelectorView.swift */,
 			);
 			path = Medication;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				1AF3E3BC2B46FC8C00139AFD /* Department.swift in Sources */,
 				1AF3E3CC2B470F6A00139AFD /* EditPatientView.swift in Sources */,
 				1AE5DAA22B4C5CDC002AB2DA /* MedicationsJSONDecoder.swift in Sources */,
+				1A51A56B2B4F19FF00FCB63F /* SelectorView.swift in Sources */,
 				1A663D972B487D2000BB9B79 /* AddDepartmentView.swift in Sources */,
 				1AF3E3A92B46FC0900139AFD /* PatientDataApp.swift in Sources */,
 				1AF3E3C32B46FE9900139AFD /* PatientListView.swift in Sources */,
