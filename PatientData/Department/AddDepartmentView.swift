@@ -38,6 +38,7 @@ struct AddDepartmentView: View {
                     ForEach(departments){ department in
                         
                         Label(department.name, systemImage: department.icon)
+                            .symbolRenderingMode(.multicolor)
                             .swipeActions{
                             Button(role: .destructive){
                                 withAnimation{

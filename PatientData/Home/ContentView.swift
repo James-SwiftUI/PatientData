@@ -9,11 +9,25 @@ struct ContentView: View {
             List{
                 ForEach(medications){ medication in
                     VStack(alignment: .leading){
-                        Text(medication.name)
-                        Text(medication.dosage)
+                      
+                            HStack{
+                                Text(medication.name)
+                                Spacer()
+                                Image(systemName: "pill.circle.fill")
+                                    .font(.title3)
+                                
+                            }
+                           
+                            Text(medication.dosage)
+                            
+                     
+                        
+                        
+                        
                     }
                 }
             }
+            .navigationTitle("Medications")
         }
     }
 }

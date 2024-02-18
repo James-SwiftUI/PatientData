@@ -9,10 +9,6 @@
             "icon" : "heart"
         },
         {
-            "name" : "Emergency",
-            "icon" : "staroflife"
-        },
-        {
             "name" : "ICU",
             "icon" : "waveform.path.ecg.rectangle"
         },
