@@ -104,7 +104,7 @@ struct EditPatientView: View {
                         }label: {
                             Text("Save Changes")
                         }
-                        .buttonStyle(.borderedProminent)
+                        .customStyle()
                     }footer: {
                         Text("Update")
                     }

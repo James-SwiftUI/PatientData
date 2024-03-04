@@ -14,25 +14,16 @@ struct AddPatientView: View {
     var body: some View {
         NavigationStack{
             Form{
-                TextField("First Name", text: $patient.firstName)
-                TextField("Last Name", text: $patient.lastName)
-                
-                        
-                DatePicker("DOB", selection: $patient.dob, in: dateRange, displayedComponents: .date)
-                            .datePickerStyle(GraphicalDatePickerStyle())
-                
-                Button("Add"){
-                    withAnimation{
-                        save()
-                    }
+                Section{
+                    TextField("First Name", text: $patient.firstName)
+                    TextField("Last Name", text: $patient.lastName)
                     
-                    dismiss()
+                            
+                    DatePicker("DOB", selection: $patient.dob, in: dateRange, displayedComponents: .date)
+                                .datePickerStyle(GraphicalDatePickerStyle())
+                }header: {
+                    Text("Patient Details")
                 }
-                .buttonStyle(.borderedProminent)
-                .padding(8)
-                .disabled(patient.firstName.isEmpty || patient.lastName.isEmpty)
-                
-                
                 Section{
                     Picker("", selection: $selectedDepartment){
                         ForEach(departments){ department in
@@ -46,6 +37,23 @@ struct AddPatientView: View {
                     .pickerStyle(.inline)
                 }header: {
                     Text("Select Department")
+                }
+                
+                if !patient.firstName.isEmpty && !patient.lastName.isEmpty{
+                    Section{
+                        Button("Save"){
+                            withAnimation{
+                                save()
+                            }
+                            
+                            dismiss()
+                        }
+                        .customStyle()
+                        .disabled(patient.firstName.isEmpty || patient.lastName.isEmpty)
+                    }header: {
+                        Text("Add Patient")
+                    }
+                    
                 }
             }
             .navigationTitle("Add Patient")

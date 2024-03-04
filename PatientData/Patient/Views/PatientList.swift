@@ -39,6 +39,7 @@ struct PatientList: View {
                                     
                                 
                                     patient.icon
+                                        .font(.title3)
                                     Text(patient.description)
                                         .font(.caption)
                                         

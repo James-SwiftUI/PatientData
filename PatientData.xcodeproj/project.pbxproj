@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A51A56B2B4F19FF00FCB63F /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51A56A2B4F19FF00FCB63F /* SelectorView.swift */; };
+		1A5D017A2B963949006DBBE4 /* SaveButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D01792B963949006DBBE4 /* SaveButtonStyle.swift */; };
 		1A663D972B487D2000BB9B79 /* AddDepartmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A663D962B487D2000BB9B79 /* AddDepartmentView.swift */; };
 		1A663D9B2B487DB200BB9B79 /* DefaultJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */; };
 		1ABB8CAF2B4B01CD002C7D69 /* MedicationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1A51A56A2B4F19FF00FCB63F /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
+		1A5D01792B963949006DBBE4 /* SaveButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonStyle.swift; sourceTree = "<group>"; };
 		1A663D962B487D2000BB9B79 /* AddDepartmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepartmentView.swift; sourceTree = "<group>"; };
 		1A663D9A2B487DB200BB9B79 /* DefaultJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultJSON.swift; sourceTree = "<group>"; };
 		1ABB8CAE2B4B01CD002C7D69 /* MedicationSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationSelectionView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5D01782B963930006DBBE4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1A5D01792B963949006DBBE4 /* SaveButtonStyle.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		1A663D952B487D0D00BB9B79 /* Department */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		1AF3E3A72B46FC0900139AFD /* PatientData */ = {
 			isa = PBXGroup;
 			children = (
+				1A5D01782B963930006DBBE4 /* CustomView */,
 				1AF3E3A82B46FC0900139AFD /* PatientDataApp.swift */,
 				1A663D952B487D0D00BB9B79 /* Department */,
 				1AF3E3CF2B4717E400139AFD /* Home */,
@@ -302,6 +313,7 @@
 				1AF3E3C32B46FE9900139AFD /* PatientListView.swift in Sources */,
 				1A663D9B2B487DB200BB9B79 /* DefaultJSON.swift in Sources */,
 				1AF3E3C12B46FE8300139AFD /* MainTabView.swift in Sources */,
+				1A5D017A2B963949006DBBE4 /* SaveButtonStyle.swift in Sources */,
 				1ABB8CAF2B4B01CD002C7D69 /* MedicationSelectionView.swift in Sources */,
 				1AF3E3BF2B46FCAA00139AFD /* SortOrder.swift in Sources */,
 				1AE5DA9E2B4C4AD6002AB2DA /* PatientsContainer.swift in Sources */,
